@@ -4,7 +4,7 @@ class InsertionSort {
 		int in, out;
 
 		for (out=1; out<values.length; out++) {
-			long temp = values[out];
+			int temp = values[out];
 			in = out;
 			while(in>0 && values[in-1] >= temp){
 				values[in] = values[in-1];
@@ -18,7 +18,7 @@ class InsertionSort {
 		InsertionSort insertionSort = new InsertionSort();
 		int size = 10;
 		int[] values = new int[size];
-		int[] values = insertionSort.gerarValoresRandomicos(values,size);
+		insertionSort.gerarValoresRandomicos(values,size);
 		insertionSort.sort(values);
 		for (int val : values) {
 			System.out.println(val);
