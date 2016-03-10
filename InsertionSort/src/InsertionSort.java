@@ -18,14 +18,14 @@ class InsertionSort {
 		InsertionSort insertionSort = new InsertionSort();
 		int size = 10;
 		int[] values = new int[size];
-		insertionSort.gerarValoresRandomicos(values,size);
+		insertionSort.generateRandomValues(values,size);
 		insertionSort.sort(values);
 		for (int val : values) {
 			System.out.println(val);
 		}
 	}
 
-	private void gerarValoresRandomicos(int[] array, int size){
+	private void generateRandomValues(int[] array, int size){
 		for (int i=0; i<array.length; i++) {
 			array[i]=(int)(Math.random()*size);
 		}
